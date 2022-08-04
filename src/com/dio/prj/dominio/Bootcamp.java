@@ -1,6 +1,7 @@
 package com.dio.prj.dominio;
 
 import java.time.LocalDate;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Objects;
@@ -45,7 +46,7 @@ public class Bootcamp {
         this.devsInscritos = devsInscritos;
     }
 
-    public Set<Conteudo> getConteudos() {
+    public Collection<? extends Conteudo> getConteudos() {
         return conteudos;
     }
 
